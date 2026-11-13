@@ -2,7 +2,7 @@ PREFIX  ?= arm-none-eabi-
 CC      := $(PREFIX)gcc
 OBJCOPY := $(PREFIX)objcopy
 SIZE    := $(PREFIX)size
-
+// edit the sdk path to where it is on your desktop
 TARGET   := blink
 BUILD    := build
 LDSCRIPT := link.ld
