@@ -2,12 +2,12 @@ PREFIX  ?= arm-none-eabi-
 CC      := $(PREFIX)gcc
 OBJCOPY := $(PREFIX)objcopy
 SIZE    := $(PREFIX)size
-// edit the sdk path to where it is on your desktop
+
 TARGET   := blink
 BUILD    := build
 LDSCRIPT := link.ld
 SRCDIR   := src
-SDK_PATH := /home/ian_m/mspm0-sdk
+SDK_PATH ?= /home/ian_m/mspm0-sdk
 
 C_SRCS   := $(wildcard $(SRCDIR)/*.c)
 SDK_SRCS := $(SDK_PATH)/source/ti/driverlib/dl_gpio.c \
